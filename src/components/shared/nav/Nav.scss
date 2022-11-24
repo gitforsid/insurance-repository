@@ -1,0 +1,64 @@
+.Nav {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #3d72bf;
+  color: #fff;
+  padding: 3rem 0;
+
+  header {
+    margin-bottom: 5rem;
+    padding: 0 1.5rem;
+
+    .company-name {
+      font-size: 24px;
+      text-transform: capitalize;
+      margin-top: 1.75rem;
+    }
+
+    .header-icon {
+      text-align: center;
+
+      svg {
+        font-size: 42px;
+      }
+    }
+  }
+
+  .nav-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    border-top: 1px solid #ffffffe6;
+    border-bottom: 1px solid #ffffffe6;
+
+    .nav-item {
+      width: 100%;
+      border-bottom: 1px solid #ffffffe6;
+      cursor: pointer;
+
+      & > div {
+        width: 75%;
+        display: flex;
+        margin-left: auto;
+        text-align: left;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 0.25px;
+        padding: 0.75rem 0.5rem;
+
+        .nav-item-icon {
+          margin-right: 0.5rem;
+        }
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
